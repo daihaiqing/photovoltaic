@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/mainmain.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script type="text/javascript" src="js/require.js" data-main="js/main"></script>
+    <script type="text/javascript" src="js/respond.js"></script>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    
+    <script>
+       /* window.addEventListener("keydown", function(e){
+            if(e.keyCode == 116){
+                e.preventDefault();
+            }
+            //reload iframe
+        }, false);*/
+    </script>
+</head>
+<body>
+<div class="head">
+    <img src="images/logo.png"><p>光伏电站综合运行管理网站</p>
+</div>
+<div class="clear"></div>
+<div class="nav">
+    <img src="images/leftBg.png">
+    <img src="images/firstBtn.png" class="firstPage" id="firstPage">
+    <ul>
+        <li></li>
+        <li class="unselected"><img src="images/overview.png"></li>
+        <li class="unselected"><img src="images/analysis.png"></li>
+        <li class="unselected"><img src="images/dataCom.png"></li>
+        <li class="unselected"><img src="images/Intelligent.png"></li>
+        <li class="unselected"><img src="images/fault.png"></li>
+        <li class="unselected"><img src="images/qualityFile.png"></li>
+        <li class="unselected"><img src="images/intimeData.png"></li>
+        <li class="unselected"><img src="images/backManage.png"></li>
+        <!-- <li></li> -->
+        <!-- <li></li> -->
+        <!-- <li></li> -->
+    </ul>
+</div>
+<div class="bar clear">
+    <!-- <img src="images/over.png" style="width: 100%"> -->
+</div>
+<iframe src="overView.html" id="menuFrame"></iframe>
+<div class="clear"></div>
+<div style="font-size:16px;">123456&copy;123456789</div>
+<div class="warning" id="warning">
+    <div class="solve">
+        <img src="images/warning1.png" style="margin-top:-7px;"><span>发现危险，建议查看</span><span >
+            <img src="images/close.png" style="margin-top:-2px;margin-left:20px;" id="close-warning">
+        </span>
+    </div>
+    <ul>
+        <li><img src="images/dot.png">1</li>
+        <li><img src="images/dot.png">2</li>
+        <li><img src="images/dot.png">3</li>
+        <li><img src="images/dot.png">4</li>
+    </ul>
+    <div style="display:inline-block;width:100%;text-align:right;margin-top:7px;"><a href="" style="color:blue">忽略</a><button>查看<img src="images/right.png"></button></div>
+</div>
+<iframe style=" position:absolute; top:-999em;" class="mychartstyle" src="datachart.html" name="myiframe">
+</iframe>
+</body>
+</html>
