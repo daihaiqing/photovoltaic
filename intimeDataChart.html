@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>实时数据表格</title>
+	<link href="css/Site.css" rel="stylesheet" type="text/css"> 
+	<link rel="stylesheet" type="text/css" href="css/intimeDataChart.css">
+	<script type="text/javascript" src="js/require.js" data-main="js/intimeDataChart"></script>
+	<script type="text/javascript" language="javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery.table.js"></script>
+</head>
+<body>
+<div class="left"><!--在intimedatachart.js中获取相关html-->
+</div>
+<div class="right">
+<div class="myTable">
+   <div class="table-shadow"></div>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Order</th>
+                <th>Created</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="display: table-row;" class="example">
+                <td>TestWeekDayName</td>
+                <td>TESTWEEKDAY</td>
+                <td>4</td>
+                <td>2010/1/12</td>
+            </tr>
+            <tr style="display: table-row;">
+                <td>TestWeekDayName</td>
+                <td>TESTWEEKDAY</td>
+                <td>4</td>
+                <td>2010/1/12</td>
+            </tr>
+            <tr style="display: table-row;">
+                <td>TestWeekDayName</td>
+                <td>TESTWEEKDAY</td>
+                <td>4</td>
+                <td>2010/1/12</td>
+            </tr>
+        </tbody>
+    </table>
+   </div>
+</div>
+<ul style="display:none;" class="choose">
+	<li id="addnode">添加节点</li>
+	<li id="addtest">添加测点</li>
+	<li id="del">删除</li>
+	<li id="edi">编辑</li>
+</ul>
+<div id="bg"></div>
+	<script type="text/javascript" language="javascript" src="js/table.js"></script>
+</body>
+</html>
